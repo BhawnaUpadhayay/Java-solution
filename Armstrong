@@ -1,0 +1,23 @@
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+       int n= input.nextInt();
+    int remainder,result,n1=0;
+    n1=n;
+    while(n1!=0)
+    {
+        remainder=n1%10;
+        result+=Math.power(remainder,3);
+        n1=n1/10;
+    }
+    if(result==n)
+    {
+        System.out.println(n+"is armstrong")
+    }
+    else{
+        System.out.println(n+"is not armstrong")
+    }
+    
+}
+}
