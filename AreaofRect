@@ -1,0 +1,11 @@
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter length and width : ");
+        int l = input.nextInt();
+        int w = input.nextInt();
+        int area = l*w;
+        System.out.println(area);
+    }
+}
