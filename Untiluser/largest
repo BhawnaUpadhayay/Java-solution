@@ -1,0 +1,17 @@
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+       int counter = 0, input = 0, large = Integer.MIN_VALUE;
+       System.out.print("Enter a series of values (0 to quit): ");
+       Scanner in = new Scanner(System.in);
+      while ((input = in.nextInt()) != 0) {
+         large = Integer.max(large, input);
+         counter++;
+}      if (counter > 0) {
+         System.out.println("The largest integer is: " + large);
+}
+   else {
+    System.out.println("No data was entered.");
+}
+}
+}
