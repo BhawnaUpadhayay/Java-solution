@@ -1,0 +1,18 @@
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter radius:");
+        int r=input.nextInt();
+        double area=Area(r);
+        double circumference=Circumference(r);
+        System.out.println("The Area is "+ area);
+        System.out.print("The Circumference is "+ circumference);
+       }
+        public static double Circumference(int r){
+        return 2*3.14*r;
+        }
+        public static double Area(int r){
+        return 3.14*r*r;
+        }
+}
