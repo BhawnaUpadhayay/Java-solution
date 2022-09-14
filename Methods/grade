@@ -1,0 +1,37 @@
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter marks:");
+        int n=input.nextInt();
+        String Grade=Grade(n);
+        System.out.println("Your Grade is" + Grade);
+       }
+        public static String Grade (int n){
+        if(n>=91 && n<=100)
+          {
+              return "AA";
+          }
+          if(n>=81 && n<=90)
+          {
+              return "BB";
+          }
+          if(n>=71 && n<=80)
+          {
+              return "BC";
+          }
+          if(n>=61 && n<=70)
+          {
+              return "CC";
+          }
+          if(n>=51 && n<=60)
+          {
+              return "CD";
+          }
+          if(n>=41 && n<=50)
+          {
+              return "DD";
+          }
+        return "Fail";
+        }
+}  
