@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Main{
+ public static void main(String[]args) {
+  Scanner in=new Scanner(System.in);
+  System.out.print("Enter the number: ");
+  int n=in.nextInt();
+  int ans=sum(n);
+  System.out.println("Sum of the number is : "+ans);
+ }
+
+ public static int sum(int n) {
+     return n*(n+1)/2;
+
+ }
+}
